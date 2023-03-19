@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Login</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ArQOodUtRu6NhXegnW1SWBJ5qZ-1fqbKFoUm5nAV52WoHfkuHrzEnWyrnnR4oJfIs42MjgWRh7qWwmrJS798GCYcmPN-Npw9c2uTzzbi7UjdWlJ2YJDkNx9FOlCu_KXgkG_PXA9PfhO0cWzQAsLPWw" charset="UTF-8"></script></head>
+  <body>
+    <div class="container">
+      <h1>Please login</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
